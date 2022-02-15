@@ -7,6 +7,12 @@ Praneeth V - 19358 <br>
 Sanket Y - 19361 <br>
 Ajay Krishna - 19303 <br>
 
+# Language & Tools
+Java <br>
+JDBC <br>
+PostGres SQL <br>
+Eclipse <br>
+
 
 
 
