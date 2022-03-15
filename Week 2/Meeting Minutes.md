@@ -1,6 +1,6 @@
-DATE: Sunday, Feb 13th, 2022
-TIME: 10:00 PM
-LOCATION: Discord
+DATE: Sunday, Feb 13th, 2022<br>
+TIME: 10:00 PM <br>
+LOCATION: Discord <br>
 MEETING CREATED BY: Sahit V
 TYPE OF MEETING: Project Discussion
 ATTENDEES PRESENT:
