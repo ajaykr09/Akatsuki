@@ -32,7 +32,7 @@ class login {
 		p= new JPanel();
 		p.setBounds(0,0,400,400);
 		p.setBackground(Color.black);
-		welcome = new JLabel("Welcome To E-Governance");welcome.setBounds(100, 30, 300, 40);welcome.setFont(f3);welcome.setForeground(Color.green);
+		welcome = new JLabel("Welcome To E-Governance");welcome.setBounds(100, 30, 300, 40);welcome.setFont(f3);welcome.setForeground(Color.green); 
 		lusername = new JLabel("Username: ");lusername.setBounds(50, 90, 150, 30);lusername.setFont(f1);lusername.setForeground(Color.green);
 		lpassword = new JLabel("Password: ");lpassword.setBounds(50, 130, 150, 30);lpassword.setFont(f1);lpassword.setForeground(Color.green);
 		tusername = new JTextField();tusername.setBounds(200, 90, 150, 30);tusername.setFont(f2);
