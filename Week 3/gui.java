@@ -91,6 +91,6 @@ class login {
 }
 public class gui {
 	public static void main(String[] args) throws SQLException {
-		new login();
+		new login(); 
 	}
 }
