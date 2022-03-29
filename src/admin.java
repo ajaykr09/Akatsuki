@@ -22,7 +22,6 @@ import javax.swing.table.JTableHeader;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-
 public class admin{
 	JFrame admin;
 	JPanel po,p0,p1,p2,p3;
