@@ -252,3 +252,20 @@ public class client{
 	        	}
 	        }
 		};
+		m6.addActionListener(x);
+		m5.addActionListener(x);
+		m4.addActionListener(x);
+		m1.addActionListener(x);
+	    m2.addActionListener(x);
+	    m3.addActionListener(x);
+	    br1.addActionListener(x);
+	    b1.addActionListener(x);
+	    br2.addActionListener(x);
+	    b2.addActionListener(x);
+	    br3.addActionListener(x);
+	    b3.addActionListener(x);
+	    br4.addActionListener(x);
+	    b4.addActionListener(x);
+    }
+}
+
