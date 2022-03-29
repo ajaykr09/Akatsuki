@@ -27,3 +27,7 @@ public class client{
 	JMenuBar M;
 	JMenu M1,M2,M3;
     	JMenuItem m1,m2,m3,m4,m5,m6;
+	JButton br1,br2,br3,br4,b1,b2,b3,b4,b5;
+	JLabel l0,l1,l2,l3,l4,l5;
+	JTable t;
+	JTextField t1,t2,t3,t4,t5;
