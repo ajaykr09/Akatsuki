@@ -24,9 +24,10 @@ Team members present for the meeting:
  
 
 What did you do in this week ?<br><br>
-Sahit,Sanketh-Started coding for login page in GUI.<br><br>
-Ajay-Connected a Database from PostgreSQL to our Project.<br><br>
-Praneeth-Created different labels showcasing Username,Password,login,Reset etc and a checkbox for showing the password.<br><br>
+Ajay,Praneeth-Completed coding the admin side of our project<br>
+Sahit,Sanketh-Completed coding the client side of our project <br><br>
+<br>
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,7 +39,8 @@ Praneeth-Created different labels showcasing Username,Password,login,Reset etc a
 
 
 What will you work on next week ?<br><br>
-We will implement different logins for admin and client.<br>
+We will connect our project to Database using JDBC<br>
+verify the user details(username,password) from the Database<br>
 A new feature called register in login page for registering new users which gets added to our Database in PostgreSQL.<br><br>
 
  -------------------------------------------------------------------------------------------------------------------------------------
@@ -53,7 +55,7 @@ A new feature called register in login page for registering new users which gets
 
 Do you have any obstacles? <br><br>
 We had trouble connecting PostgreSQL to our Project.<br>
-When we were trying to add new labels in the login page,the padding was disturbed.<br>
+<br>
 
  -------------------------------------------------------------------------------------------------------------------------------------
  
