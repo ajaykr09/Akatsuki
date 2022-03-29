@@ -52,3 +52,11 @@ public class admin{
 		po = new JPanel(new BorderLayout());po.setBounds(0,0,150,400);po.setBackground(Color.cyan);
 		po.add(m5);po.add(m1);po.add(m2);po.add(m3);po.add(m4);
 		p0 = new JPanel(new BorderLayout());p0.setBounds(220,0,430,400);p0.setBackground(Color.black);
+		l0 = new JLabel("Welcome to");l0.setFont(f3);l0.setBounds(135, 100, 200, 40);l0.setForeground(Color.green);
+		l1 = new JLabel("E-Governance System");l1.setFont(f3);l1.setBounds(50, 135, 300, 40);l1.setForeground(Color.green);
+		p0.add(l0);p0.add(l1);
+		p1 = new JPanel();p1.setBounds(0,0,400,400);p1.setBackground(Color.black);
+		l2 = new JLabel("Username: ");l2.setFont(f1);l2.setBounds(50, 20, 150, 40);l2.setForeground(Color.green);
+		t1 = new JTextField();t1.setFont(f2);t1.setBounds(200,20,150,40);
+		br1 = new JButton("Reset");br1.setFont(f1);br1.setBounds(50,70,100,40);br1.setBackground(Color.orange);
+		b1 = new JButton("Search");b1.setFont(f1);b1.setBounds(200,70,100,40);b1.setBackground(Color.orange);
