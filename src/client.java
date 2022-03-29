@@ -34,3 +34,16 @@ public class client{
 	Font f1 = new Font("SansSerif", Font.BOLD, 15);
     	Font f2 = new Font("SansSerif", Font.PLAIN, 15);
     	Font f3 = new Font("SansSerif", Font.BOLD, 20);
+	client() throws SQLException{
+		connect s=new connect();
+		client =new JFrame("Client");
+		M = new JMenuBar();
+		M1 = new JMenu("Goto");
+		M2 = new JMenu("Mac");
+		M3 = new JMenu("Others");
+		m1 = new JMenuItem("View user_details");m1.setFont(f1);m1.setForeground(Color.black);
+		m2 = new JMenuItem("View payment details");m2.setFont(f1);m2.setForeground(Color.black);
+		m3 = new JMenuItem("View bills");m3.setFont(f1);m3.setForeground(Color.black);
+		m4 = new JMenuItem("Request_for_info");m4.setFont(f1);m4.setForeground(Color.black);
+		m5 = new JMenuItem("Logout");
+		m6 = new JMenuItem("Home");
