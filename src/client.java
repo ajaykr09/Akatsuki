@@ -93,3 +93,33 @@ public class client{
 		client.setSize(400,400);client.setBounds(550, 230, 400, 400);
 		client.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		client.setResizable(false);
+		ActionListener x=new ActionListener() {  
+	        public void actionPerformed(ActionEvent e) {
+	        	if(e.getSource()==m1) {
+	        		p0.setVisible(false);
+	        		p1.setVisible(true);
+	                p2.setVisible(false);
+	                p3.setVisible(false);
+	                p4.setVisible(false);
+	        	}
+	        	if(e.getSource()==m2) {
+	        		p0.setVisible(false);
+	        		p1.setVisible(false);
+	                p2.setVisible(true);
+	                p3.setVisible(false);
+	                p4.setVisible(false);
+	        	}
+	        	if(e.getSource()==m3) {
+	        		p0.setVisible(false);
+	        		p1.setVisible(false);
+	                p2.setVisible(false);
+	                p3.setVisible(true);
+	                p4.setVisible(false);
+	        	}
+	        	if(e.getSource()==m4) {
+	        		p0.setVisible(false);
+	        		p1.setVisible(false);
+	                p2.setVisible(false);
+	                p3.setVisible(false);
+	                p4.setVisible(true);
+	        	}	        	
