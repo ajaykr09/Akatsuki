@@ -129,4 +129,57 @@ public class admin{
 	            		JOptionPane.showMessageDialog(admin,"No user with that ID","Error",JOptionPane.WARNING_MESSAGE);
 	            	}
 	        	}
-	        	
+	        	if(e.getSource()==b2) {
+	        		try{
+	        			String id=t2.getText();
+	        			s.preparedStatement = s.connect.prepareStatement("select username,bills.bill_id,bill_type,bill_desc,ph_number from bills natural join user_details where bill_id=?;");
+	        			 int i = Integer.parseInt(id);
+	        			s.preparedStatement.setInt(1,i);
+	        	        s.resultSet=s.preparedStatement.executeQuery();
+	            		String column[]={"username" , "bills_id" , "bill_type","bill_desc" ,"ph_number"}; 
+	        	    	String[][] rows=new String[1][5];
+	        	    	s.resultSet.next();
+        	            rows[0][0] = s.resultSet.getString("username");
+        	            rows[0][1] = s.resultSet.getString("bill_id");
+        	            rows[0][2] = s.resultSet.getString("bill_type");
+        	            rows[0][3] = s.resultSet.getString("bill_desc");
+        	            rows[0][4] = s.resultSet.getString("ph_number");        	    
+	        	    	t=new JTable(rows,column);t.setBackground(Color.yellow);
+	        	        JTableHeader tableHeader = t.getTableHeader();
+	        	        tableHeader.setBackground(Color.orange);
+	        			JScrollPane sp=new JScrollPane(t);sp.setBounds(0,240,400,40);sp.setBackground(Color.black);
+	        			t.setFocusable(false);
+	        			p2.add(sp);
+	            	}catch(Exception e1) {
+	            		System.out.println(e1);
+	            		JOptionPane.showMessageDialog(admin,"No bill with that ID","Error",JOptionPane.WARNING_MESSAGE);
+	            	}
+	        	}
+	        	if(e.getSource()==b3) {
+	        		try{
+	        			String id=t3.getText();
+	        			s.preparedStatement = s.connect.prepareStatement("select username,payment_id,amount,due_date,ph_number from payments natural join user_details where payment_id=?;");
+	        			int i = Integer.parseInt(id);
+	        	        s.preparedStatement.setInt(1,i);
+	        	        s.resultSet=s.preparedStatement.executeQuery();
+	            		String column[]={"Username" ,"Payment_id", "Amount" , "Due_date", "ph_number"}; 
+	        	    	String[][] rows=new String[1][5];
+	        	    	s.resultSet.next();
+        	            rows[0][0] = s.resultSet.getString("username");
+        	            rows[0][1] = s.resultSet.getString("payment_id");
+        	            rows[0][2] = s.resultSet.getString("amount");
+        	            rows[0][3] = String.valueOf(s.resultSet.getDate("due_date"));
+        	            rows[0][4] = s.resultSet.getString("ph_number");
+	        	    	t=new JTable(rows,column);t.setBackground(Color.yellow);
+	        	        JTableHeader tableHeader = t.getTableHeader();
+	        	        tableHeader.setBackground(Color.orange);
+	        			JScrollPane sp=new JScrollPane(t);sp.setBounds(0,240,400,40);sp.setBackground(Color.black);
+	        			t.setFocusable(false);
+	        			p3.add(sp);
+	            	}catch(Exception e1) {
+	            		System.out.println(e1);
+	            		JOptionPane.showMessageDialog(admin,"No payments with that ID","Error",JOptionPane.WARNING_MESSAGE);
+	            	}
+	        	}
+	        }
+		};
