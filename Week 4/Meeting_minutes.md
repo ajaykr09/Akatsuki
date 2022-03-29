@@ -29,7 +29,7 @@ Completed
 <br>
 <br>
 ## Meeting 2 Information
-*Meeting Date/Time:*  20th March '22 9PM<br>
+*Meeting Date/Time:*  28th March '22 9PM<br>
 *Meeting Purpose:* Code<br>
 *Meeting Location:* Hostel <br>
 *Time Allocated:* 2Hours<br>
