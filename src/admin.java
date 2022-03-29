@@ -104,4 +104,29 @@ public class admin{
         	        p2.setVisible(false);
         	        p3.setVisible(false);
 	        	}
+				        	if(e.getSource()==b1) {
+	        		try{
+	        			String id=t1.getText();
+	        			s.preparedStatement = s.connect.prepareStatement("select username,password,ph_number,address,email from user_details where username=?;");
+	        	        s.preparedStatement.setString(1,id);
+	        	        s.resultSet=s.preparedStatement.executeQuery();
+	            		String column[]={"Username" , "Password" , "ph_number","address" ,"email"}; 
+	        	    	String[][] rows=new String[1][5];
+	        	    	s.resultSet.next();
+        	            rows[0][0] = s.resultSet.getString("username");
+        	            rows[0][1] = s.resultSet.getString("password");
+        	            rows[0][2] = s.resultSet.getString("ph_number");
+        	            rows[0][3] = s.resultSet.getString("address");
+        	            rows[0][4] = s.resultSet.getString("email");	            
+	        	    	t=new JTable(rows,column);t.setBackground(Color.yellow);
+	        	        JTableHeader tableHeader = t.getTableHeader();
+	        	        tableHeader.setBackground(Color.orange);
+	        			JScrollPane sp=new JScrollPane(t);sp.setBounds(0,240,400,40);sp.setBackground(Color.black);
+	        			t.setFocusable(false);
+	        			p1.add(sp);
+	            	}catch(Exception e1) {
+	            		System.out.println(e1);
+	            		JOptionPane.showMessageDialog(admin,"No user with that ID","Error",JOptionPane.WARNING_MESSAGE);
+	            	}
+	        	}
 	        	
