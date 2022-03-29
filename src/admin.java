@@ -65,3 +65,11 @@ public class admin{
 		t2 = new JTextField();t2.setFont(f2);t2.setBounds(200,20,150,40);
 		br2 = new JButton("Reset");br2.setFont(f1);br2.setBounds(50,70,100,40);br2.setBackground(Color.orange);
 		b2 = new JButton("Search");b2.setFont(f1);b2.setBounds(200,70,100,40);b2.setBackground(Color.orange);
+		p2.add(l3);p2.add(t2);p2.add(br2);p2.add(b2);
+		p3 = new JPanel();p3.setBounds(0,0,400,400);p3.setBackground(Color.black);
+		l4 = new JLabel("Payment id: ");l4.setFont(f1);l4.setBounds(50, 20, 150, 40);l4.setForeground(Color.green);
+		t3 = new JTextField();t3.setFont(f2);t3.setBounds(200,20,150,40);
+		br3 = new JButton("Reset");br3.setFont(f1);br3.setBounds(50,70,100,40);br3.setBackground(Color.orange);
+		b3 = new JButton("Search");b3.setFont(f1);b3.setBounds(200,70,100,40);b3.setBackground(Color.orange);
+		p3.add(l4);p3.add(t3);p3.add(br3);p3.add(b3);
+		admin.setJMenuBar(M);
