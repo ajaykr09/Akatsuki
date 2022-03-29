@@ -60,3 +60,9 @@ public class admin{
 		t1 = new JTextField();t1.setFont(f2);t1.setBounds(200,20,150,40);
 		br1 = new JButton("Reset");br1.setFont(f1);br1.setBounds(50,70,100,40);br1.setBackground(Color.orange);
 		b1 = new JButton("Search");b1.setFont(f1);b1.setBounds(200,70,100,40);b1.setBackground(Color.orange);
+		p1.add(l2);p1.add(t1);p1.add(br1);p1.add(b1);
+		p2 = new JPanel();p2.setBounds(0,0,400,400);p2.setBackground(Color.black);
+		l3 = new JLabel("Bills id: ");l3.setFont(f1);l3.setBounds(50, 20, 150, 40);l3.setForeground(Color.green);
+		t2 = new JTextField();t2.setFont(f2);t2.setBounds(200,20,150,40);
+		br2 = new JButton("Reset");br2.setFont(f1);br2.setBounds(50,70,100,40);br2.setBackground(Color.orange);
+		b2 = new JButton("Search");b2.setFont(f1);b2.setBounds(200,70,100,40);b2.setBackground(Color.orange);
