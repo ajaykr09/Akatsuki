@@ -89,3 +89,19 @@ public class admin{
         admin.setBounds(550, 230, 600, 400);
         admin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         admin.setResizable(false);
+				ActionListener x=new ActionListener() {  
+	        public void actionPerformed(ActionEvent e) {
+	        	if(e.getActionCommand()=="Reset") {
+        			t1.setText("");
+        			t2.setText("");
+        			t3.setText("");
+	        	}
+	        	if(e.getSource()==mi1) {
+	        		admin.setBounds(550, 230, 600, 400);
+	        		po.setVisible(true);
+	        		p0.setVisible(true);
+	        		p1.setVisible(false);
+        	        p2.setVisible(false);
+        	        p3.setVisible(false);
+	        	}
+	        	
