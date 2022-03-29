@@ -44,3 +44,11 @@ public class admin{
 		M = new JMenuBar();
 		M1 = new JMenu("Home");
 		M1.add(mi1);M.add(M1);
+		m1 = new JLabel("View user_details");m1.setFont(f1);m1.setForeground(Color.black);m1.setBounds(10,50,150,40);
+        m2 = new JLabel("View bills");m2.setFont(f1);m2.setForeground(Color.black);m2.setBounds(10,100,150,40);
+        m3 = new JLabel("View payments");m3.setFont(f1);m3.setForeground(Color.black);m3.setBounds(10,150,150,40);
+        m4 = new JLabel("Logout");m4.setBounds(10,200,150,40);m4.setFont(f1);
+        m5 = new JLabel("Home");m5.setBounds(10,10,150,40);m5.setFont(f1);
+		po = new JPanel(new BorderLayout());po.setBounds(0,0,150,400);po.setBackground(Color.cyan);
+		po.add(m5);po.add(m1);po.add(m2);po.add(m3);po.add(m4);
+		p0 = new JPanel(new BorderLayout());p0.setBounds(220,0,430,400);p0.setBackground(Color.black);
