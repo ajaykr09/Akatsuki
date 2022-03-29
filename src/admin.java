@@ -217,3 +217,48 @@ public class admin{
 	        		}
               }
           });
+				  m3.addMouseListener(new MouseAdapter() {
+			  
+              @Override
+              public void mouseClicked(MouseEvent e) {
+            	  admin.setBounds(550, 230, 400, 400);
+            	  	po.setVisible(false);
+	        		p0.setVisible(false);
+	        		p1.setVisible(false);
+	                p2.setVisible(false);
+	                p3.setVisible(true);
+              }
+          });
+		  m2.addMouseListener(new MouseAdapter() {
+			  
+              @Override
+              public void mouseClicked(MouseEvent e) {
+            	  admin.setBounds(550, 230, 400, 400);
+            	  po.setVisible(false);
+	        		p0.setVisible(false);
+	        		p1.setVisible(false);
+	                p2.setVisible(true);
+	                p3.setVisible(false);
+              }
+          });
+		  m1.addMouseListener(new MouseAdapter() {
+			 
+              @Override
+              public void mouseClicked(MouseEvent e) {
+            	  admin.setBounds(550, 230, 400, 400);
+            	  po.setVisible(false);
+	        		p0.setVisible(false);
+	        		p1.setVisible(true);
+	                p2.setVisible(false);
+	                p3.setVisible(false);
+              }
+          });
+		  mi1.addActionListener(x);
+	    br1.addActionListener(x);
+	    b1.addActionListener(x);
+	    br2.addActionListener(x);
+	    b2.addActionListener(x);
+	    br3.addActionListener(x);
+	    b3.addActionListener(x);	    
+	}
+}
