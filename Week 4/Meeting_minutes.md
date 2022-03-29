@@ -45,7 +45,7 @@ Ajay Krishna<br>
 
 Item | Description
 ---- | ----
-Agenda Item  | Starting the coding part of our project
+Agenda Item  | completed the remaining coding part
 
 
 ## Discussion Items
