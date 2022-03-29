@@ -183,3 +183,37 @@ public class admin{
 	        	}
 	        }
 		};
+		  m5.addMouseListener(new MouseAdapter() {
+			  
+              @Override
+              public void mouseClicked(MouseEvent e) {
+            	  admin.setBounds(550, 230, 600, 400);
+            	  po.setVisible(true);
+	        		p0.setVisible(true);
+	        		p1.setVisible(false);
+	        		p2.setVisible(false);
+	        		p3.setVisible(false); 
+	        		
+              }
+          });
+		  m4.addMouseListener(new MouseAdapter() {
+			  
+              @Override
+              public void mouseClicked(MouseEvent e) {
+            	  admin.setBounds(550, 230, 400, 400);
+            	  try {
+	                    if (s.resultSet != null) s.resultSet.close();
+	                    if (s.statement != null) s.statement.close();
+	                    if (s.connect != null) s.connect.close();
+	                } 
+	                catch (Exception e1) {}
+	        		finally{
+	        			if(JOptionPane.showConfirmDialog(admin,"Sure want to logout?", "Exit?",JOptionPane.YES_NO_OPTION,
+		                        JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION){
+							try {login l = new login();l.log.setVisible(true);}
+							catch (SQLException e1) {e1.printStackTrace();}
+		        			finally{admin.setVisible(false);}
+		        		}
+	        		}
+              }
+          });
