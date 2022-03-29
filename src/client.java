@@ -31,3 +31,6 @@ public class client{
 	JLabel l0,l1,l2,l3,l4,l5;
 	JTable t;
 	JTextField t1,t2,t3,t4,t5;
+	Font f1 = new Font("SansSerif", Font.BOLD, 15);
+    	Font f2 = new Font("SansSerif", Font.PLAIN, 15);
+    	Font f3 = new Font("SansSerif", Font.BOLD, 20);
