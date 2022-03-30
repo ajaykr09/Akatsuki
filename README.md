@@ -5,7 +5,7 @@ E-governance is not really about technology. It is about people, processes, and 
 Sahit V (Scrum Master) - 19361  <br>
 Ajay Krishna - 19303 <br>
 Praneeth V - 19358 <br>
-Sanket Y - 19362 <br>
+Sanketh Y - 19362 <br>
 
 
 # Language & Tools
